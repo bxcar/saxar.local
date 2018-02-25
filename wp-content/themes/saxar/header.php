@@ -10,47 +10,64 @@
  */
 
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <meta charset="UTF-8">
+    <title>Зал Лофт</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="<?= get_template_directory_uri(); ?>/css/style.css" type="text/css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/jquery.fancybox.css">
 </head>
+<body>
+<!--menu-->
+<div class="wrap_menu">
+    <div class="container-wrap_menu">
+        <button class="close_menu"><img src="<?= get_template_directory_uri(); ?>/img/x.png" alt=""/> </button>
+        <button class="backward-sub"><img src="<?= get_template_directory_uri(); ?>/img/back.png" alt=""/> </button>
+        <div class="menu">
+            <ul class="list-menu">
+                <li><a href="#">Главная</a></li>
+                <li class="sub-link">
+                    <a href="#">Залы</a>
+                </li>
+                <li><a href="#">Бронирование</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="sub-menu">
+                <li><a href="#">зал 4</a></li>
+                <li><a href="#">зал 3</a></li>
+                <li><a href="#">зал 2</a></li>
+                <li><a href="#">зал 1</a></li>
+            </ul>
+        </div>
+        <div class="soc">
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'saxar' ); ?></a>
+            <a href="#" class="insta"></a>
+            <a href="#" class="vk"></a>
+        </div>
+    </div>
+</div>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'saxar' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<div class="wraper">
+    <div class="header header_inside header_loft">
+        <div class="empty">
+            <div class="wrap_head">
+                <a href="#" class="logo"><img src="<?= get_template_directory_uri(); ?>/img/logowhite/logo_saxar.png" alt=""/> </a>
+                <div class="right_head">
+                    <a href="tel:+79531013455" class="phone">+7 953 101 34 55</a>
+                    <a href="#" class="bron">БРОНИРОВАТЬ</a>
+                    <span class="burger menu-btn"><img src="<?= get_template_directory_uri(); ?>/img/burgerwhite.png" alt=""/> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block_mob_sec">
+        <div>
+            <span>Зал Сахар</span>
+            <a class="scroll" href="#id3">К интерьеру</a>
+        </div>
+    </div>
