@@ -75,42 +75,39 @@
             <div class="top">
                 <div class="text_top">
                     <h1>
-                        <div class="blue">Сахар</div>
-                        <div class="blue">Фотостудия</div>
-                        Арт-пространство.
+                        <div class="blue"><?php the_field('title'); ?></div>
+                        <div class="blue"><?php the_field('subtitle'); ?></div>
+                        <?php the_field('subtitle_2'); ?>
                     </h1>
-                    <a href="#id1" class="look_all scroll">Посмотреть залы</a>
+                    <a href="<?php the_field('button_link'); ?>" class="look_all scroll"><?php the_field('button_text'); ?></a>
                 </div>
             </div>
-            <h2 id="id1">Фотостудия Сахар на улице Зиповской</h2>
+            <h2 id="id1"><?php the_field('2_title'); ?></h2>
             <div class="line_blue"></div>
-            <h3>Текст который должен описывать студию красивыми<br/> словами и завораживающей. Текст который должен
-                описывать студию красивыми</h3>
-
+            <h3><?php the_field('2_text_under_title'); ?></h3>
                 <div class="wrap_hall" id="id1">
                     <a href="#" class="hall">
-                        <span class="hall_photo"><img src="<?= get_template_directory_uri(); ?>/img/f2yqyKX9oPs.jpg"
+                        <span class="hall_photo"><img src="<?php the_field('2_image_1'); ?>"
                                                       alt=""/> </span>
                     </a>
                     <span class="hall">
-                        <span class="name_hall">Зал Сахар</span>
-                        <span class="name_hall name_hall_t">Текст который должен описывать студию красивыми словами и завораживающей. Текст который должен описывать студию красивыми</span>
-                        <span class="name_hall hall_button_b"><a href="#">Смотреть</a></span>
+                        <span class="name_hall"><?php the_field('2_title_for_image_1'); ?></span>
+                        <span class="name_hall name_hall_t"><?php the_field('2_desc_for_image_1'); ?></span>
+                        <span class="name_hall hall_button_b"><a href="<?php the_field('2_button_link_for_image_1'); ?>"><?php the_field('2_button_text_for_image_1'); ?></a></span>
                     </span>
                     <span class="hall scren_display">
-                        <span class="name_hall">Зал Grey</span>
-                        <span class="name_hall name_hall_t">Текст который должен описывать студию красивыми словами и завораживающей. Текст который должен описывать студию красивыми</span>
-                        <span class="name_hall hall_button_b"><a href="#">Смотреть</a></span>
+                        <span class="name_hall"><?php the_field('2_title_for_image_2'); ?></span>
+                        <span class="name_hall name_hall_t"><?php the_field('2_desc_for_image_2'); ?></span>
+                        <span class="name_hall hall_button_b"><a href="<?php the_field('2_button_link_for_image_2'); ?>"><?php the_field('2_button_text_for_image_2'); ?></a></span>
                     </span>
                     <a href="#" class="hall">
-
-                        <span class="hall_photo"><img src="<?= get_template_directory_uri(); ?>/img/IMG_2373.jpg"
+                        <span class="hall_photo"><img src="<?php the_field('2_image_2'); ?>"
                                                       alt=""/> </span>
                     </a>
                     <span class="hall scren_display_of">
-                        <span class="name_hall">Зал Grey</span>
-                        <span class="name_hall name_hall_t">Текст который должен описывать студию красивыми словами и завораживающей. Текст который должен описывать студию красивыми</span>
-                        <span class="name_hall hall_button_b"><a href="#">Смотреть</a></span>
+                        <span class="name_hall"><?php the_field('2_title_for_image_2'); ?></span>
+                        <span class="name_hall name_hall_t"><?php the_field('2_desc_for_image_2'); ?></span>
+                        <span class="name_hall hall_button_b"><a href="<?php the_field('2_button_link_for_image_2'); ?>"><?php the_field('2_button_text_for_image_2'); ?></a></span>
                     </span>
                 </div>
         </div>
@@ -118,14 +115,24 @@
     <div class="block1">
         <div>
             <div class="wrap_light">
-                <span class="tittle_light">В студии имеется </span>
-                <span class="light_name">Световое оборудование</span>
+                <span class="tittle_light"><?php the_field('3_text_above_title'); ?> </span>
+                <span class="light_name"><?php the_field('3_title'); ?></span>
                 <div class="line_blue second_line"></div>
-                <p>Которое поможет вам<br/>
-                    сделать отличный снимок<br/>
-                    даже в самый<br/>
-                    пасмурный день</p>
+                <p><?php the_field('3_desc'); ?></p>
             </div>
         </div>
     </div>
+    <style>
+        .block1{
+            background: url("<?php the_field('3_background_image'); ?>") no-repeat top right;
+        }
+
+        @media (min-width:320px) and (max-width:1023px) {
+            .block1 {
+                margin-top: 50px;
+                padding-bottom: 0;
+                background: url("<?php the_field('3_background_image_for_mobile'); ?>") no-repeat top right;
+            }
+        }
+    </style>
 <?php get_footer(); ?>
