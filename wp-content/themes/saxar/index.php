@@ -11,7 +11,6 @@
  *
  * @package saxar
  */
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,14 +50,11 @@
             </ul>
         </div>
         <div class="soc">
-
             <a href="#" class="insta"></a>
             <a href="#" class="vk"></a>
         </div>
     </div>
 </div>
-
-
 <div class="wraper wrapper_icon">
     <div class="header">
         <div class="empty">
@@ -86,15 +82,12 @@
                     <a href="#id1" class="look_all scroll">Посмотреть залы</a>
                 </div>
             </div>
-
             <h2 id="id1">Фотостудия Сахар на улице Зиповской</h2>
             <div class="line_blue"></div>
             <h3>Текст который должен описывать студию красивыми<br/> словами и завораживающей. Текст который должен
-                описывать студию красивыми</h2>
+                описывать студию красивыми</h3>
 
                 <div class="wrap_hall" id="id1">
-
-
                     <a href="#" class="hall">
                         <span class="hall_photo"><img src="<?= get_template_directory_uri(); ?>/img/f2yqyKX9oPs.jpg"
                                                       alt=""/> </span>
@@ -113,7 +106,6 @@
 
                         <span class="hall_photo"><img src="<?= get_template_directory_uri(); ?>/img/IMG_2373.jpg"
                                                       alt=""/> </span>
-
                     </a>
                     <span class="hall scren_display_of">
                         <span class="name_hall">Зал Grey</span>
