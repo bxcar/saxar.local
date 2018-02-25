@@ -8,7 +8,7 @@ get_header(); ?>
         <div class="top_halls">
             <div class="top_halls_t">
                 <span class="tittle_top_halls"><?php the_title(); ?></span>
-                <a href="#" class="hall_bron">Забронировать</a>
+                <a href="<?php the_field('4_right_button_link'); ?>" class="hall_bron"><?php the_field('4_right_button_text'); ?></a>
             </div>
         </div>
         <h1><?php the_title(); ?></h1>
