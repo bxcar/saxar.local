@@ -12,22 +12,22 @@
 ?>
 <div class="footer">
     <div>
-        <a href="#" class="logo_footer"><img src="<?= get_template_directory_uri(); ?>/img/logo_saxar.png" alt=""/>
+        <a href="#" class="logo_footer"><img src="<?php the_field('footer_logo', 'option'); ?>" alt=""/>
         </a>
         <div class="content_footer">
             <div class="left_foot">
                 <div class="line_contacts">
-                    <p>Адрес:</p>
-                    <span>г. Краснодар ул. Зиповская 5 Литер Х</span>
+                    <p><?php the_field('footer_title_1', 'option'); ?></p>
+                    <span><?php the_field('footer_subtitle_1', 'option'); ?></span>
                 </div>
                 <div class="line_contacts">
-                    <p>Почта:</p>
-                    <span>simple@gmail.com</span>
+                    <p><?php the_field('footer_title_2', 'option'); ?></p>
+                    <span><?php the_field('footer_subtitle_2', 'option'); ?></span>
                 </div>
                 <div class="line_contacts">
-                    <p>Телефон:</p>
-                    <a href="#" class="phone_foot">+7 900 000 00 00</a>
-                    <a href="#" class="phone_foot">+7 900 000 00 00</a>
+                    <p><?php the_field('footer_title_3', 'option'); ?></p>
+                    <a href="<?php the_field('footer_link_1', 'option'); ?>" class="phone_foot"><?php the_field('footer_link_1_text', 'option'); ?></a>
+                    <a href="<?php the_field('footer_link_2', 'option'); ?>" class="phone_foot"><?php the_field('footer_link_2_text', 'option'); ?></a>
                 </div>
             </div>
             <ul class="foot_nav">
@@ -41,12 +41,12 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
             <div class="soc">
-                <span class="tittle_soc">Подпишись на нас:</span>
-                <a href="#" class="insta"></a>
-                <a href="#" class="vk"></a>
+                <span class="tittle_soc"><?php the_field('footer_subscribe_text', 'option'); ?></span>
+                <a target="_blank" href="<?php the_field('inst_link', 'option'); ?>" class="insta"></a>
+                <a target="_blank" href="<?php the_field('vk_link', 'option'); ?>" class="vk"></a>
             </div>
         </div>
-        <span class="copy">© 2018 Julia Dahina- Privacy policy</span>
+        <span class="copy"><?php the_field('footer_copyright', 'option'); ?></span>
     </div>
 </div>
 </div>

@@ -24,8 +24,8 @@ get_header(); ?>
                 <a class="plashka_phone" href="mailto:<?php the_field('1_text_under_3_title'); ?>"><?php the_field('1_text_under_3_title'); ?></a>
             </div>
             <div class="soc_plashka">
-                <a href="#" class="insta"></a>
-                <a href="#" class="vk"></a>
+                <a target="_blank" href="<?php the_field('inst_link', 'option'); ?>" class="insta"></a>
+                <a target="_blank" href="<?php the_field('vk_link', 'option'); ?>" class="vk"></a>
             </div>
         </div>
     </div>
