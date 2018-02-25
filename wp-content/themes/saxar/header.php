@@ -53,7 +53,7 @@
 
 
 <div class="wraper">
-    <div class="header header_inside header_loft">
+    <div class="header header_inside <?php if(get_the_ID() == 43) { ?>header_loft<?php } ?>">
         <div class="empty">
             <div class="wrap_head">
                 <a href="#" class="logo"><img src="<?= get_template_directory_uri(); ?>/img/logowhite/logo_saxar.png" alt=""/> </a>
