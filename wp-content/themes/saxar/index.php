@@ -50,8 +50,8 @@
             </ul>
         </div>
         <div class="soc">
-            <a href="#" class="insta"></a>
-            <a href="#" class="vk"></a>
+            <a target="_blank" href="<?php the_field('inst_link', 'option'); ?>" class="insta"></a>
+            <a target="_blank" href="<?php the_field('vk_link', 'option'); ?>" class="vk"></a>
         </div>
     </div>
 </div>
@@ -59,11 +59,11 @@
     <div class="header">
         <div class="empty">
             <div class="wrap_head">
-                <a href="#" class="logo"><img src="<?= get_template_directory_uri(); ?>/img/logo_saxar.png" alt=""/>
+                <a href="#" class="logo"><img src="<?php the_field('logo_for_main_page', 'option'); ?>" alt=""/>
                 </a>
                 <div class="right_head">
-                    <a href="tel:+79531013455" class="phone">+7 953 101 34 55</a>
-                    <a href="#" class="bron">БРОНИРОВАТЬ</a>
+                    <a href="tel:<?php the_field('header_phone_format', 'option'); ?>" class="phone"><?php the_field('header_phone', 'option'); ?></a>
+                    <a href="<?php the_field('header_link', 'option'); ?>" class="bron"><?php the_field('header_link_text', 'option'); ?></a>
                     <span class="burger menu-btn"><img src="<?= get_template_directory_uri(); ?>/img/burger.png"
                                                        alt=""/> </span>
                 </div>
