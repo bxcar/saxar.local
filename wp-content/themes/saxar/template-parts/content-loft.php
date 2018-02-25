@@ -3,330 +3,113 @@
  * Template Name: loft
  */
 get_header(); ?>
-    <div class="block3">
-        <div>
-            <div class="top_halls">
-                <div class="top_halls_t">
-                    <span class="tittle_top_halls">Зал Сахар</span>
-                    <a href="#" class="hall_bron">Забронировать</a>
-                </div>
+<div class="block3">
+    <div>
+        <div class="top_halls">
+            <div class="top_halls_t">
+                <span class="tittle_top_halls"><?php the_title(); ?></span>
+                <a href="#" class="hall_bron">Забронировать</a>
             </div>
-            <h1>Зал Сахар</h1>
         </div>
+        <h1><?php the_title(); ?></h1>
     </div>
-    <div class="block4" id="id3">
-        <div>
-            <div class="describe_text_hall">
-                <div class="left_th">
-                    <div class="line_th">
-                        <div class="text_th">
-                            <span>Разноплановые
-декорации </span>
-                            <p>создают в этом зале
-                                большой простор для
-                                работы, творчества и
-                                фантазии.</p>
-                        </div>
-                        <div class="text_th">
-                            <span>В другой
-раскошная</span>
-                            <p>ванна и кованая беседка.
-                                Великолепные большие
-                                ступени.</p>
-                        </div>
+</div>
+<div class="block4" id="id3">
+    <div>
+        <div class="describe_text_hall">
+            <div class="left_th">
+                <div class="line_th">
+                    <div class="text_th">
+                        <span><?php the_field('1_title_1'); ?> </span>
+                        <p><?php the_field('1_subtitle_1'); ?></p>
                     </div>
-                    <div class="line_th">
-                        <div class="text_th">
-                            <span>Благодаря большому
-пространству</span>
-                            <p>зала каждая зона
-                                абсолютно
-                                самостоятельна для
-                                съемки.</p>
-                        </div>
-                        <div class="text_th">
-                            <span>В одной части зала</span>
-                            <p>стильная зона лофт, с
-                                кожаным диваном,
-                                ковром, живой зеленью.</p>
-                        </div>
-
+                    <div class="text_th">
+                        <span><?php the_field('1_title_2'); ?></span>
+                        <p><?php the_field('1_subtitle_2'); ?></p>
                     </div>
                 </div>
-            </div>
-
-
-
-            <div class="wrap_tabs" >
-                <ul class="tabs_caption">
-                    <li class="active">Интерьер</li>
-                    <li>Фото в интерьере </li>
-                    <li>фотооборудование</li>
-                    <li>Доп. Реквизит</li>
-                </ul>
-                <div class="wr_tabs">
-                    <div class="tabs_content active">
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
+                <div class="line_th">
+                    <div class="text_th">
+                        <span><?php the_field('1_title_3'); ?></span>
+                        <p><?php the_field('1_subtitle_3'); ?></p>
                     </div>
-                    <div class="tabs_content">
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
+                    <div class="text_th">
+                        <span><?php the_field('1_title_4'); ?></span>
+                        <p><?php the_field('1_subtitle_4'); ?></p>
                     </div>
-                    <div class="tabs_content">
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
 
-                    </div>
-                    <div class="tabs_content">
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-                        <a href="<?= get_template_directory_uri(); ?>/img/gal.png" data-fancybox="images" data-caption="My caption">
-                            <img src="<?= get_template_directory_uri(); ?>/img/gal.png" alt="" />
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
-            <div class="foot_block4">
-                <span class="tittle_block4">Готовы к съемке?</span>
-                <span class="head_bl4">вы можите выбрать выбрать свободное время и внести предоплату</span>
-                <div class="content_bl4">
-                    <a href="#" class="how_to_road">Как доехать?</a>
-                    <a href="#" class="to_bron">Забронировать</a>
                 </div>
             </div>
         </div>
+
+        <div class="wrap_tabs">
+            <ul class="tabs_caption">
+                <li class="active"><?php the_field('2_title_1'); ?></li>
+                <li><?php the_field('2_title_2'); ?> </li>
+                <li><?php the_field('2_title_3'); ?></li>
+                <li><?php the_field('2_title_4'); ?></li>
+            </ul>
+            <div class="wr_tabs">
+                <div class="tabs_content active">
+                    <?php
+                    $gallery = get_field('3_gallery_1');
+                    foreach ($gallery as $photo) { ?>
+                        <a href="<?= $photo['url']; ?>" data-fancybox="images" data-caption="<?= $photo['caption']; ?>">
+                            <img src="<?= $photo['url']; ?>" alt="<?= $photo['alt']; ?>"/>
+                        </a>
+                    <?php } ?>
+                </div>
+                <div class="tabs_content">
+                    <?php
+                    $gallery = get_field('3_gallery_2');
+                    foreach ($gallery as $photo) { ?>
+                        <a href="<?= $photo['url']; ?>" data-fancybox="images" data-caption="<?= $photo['caption']; ?>">
+                            <img src="<?= $photo['url']; ?>" alt="<?= $photo['alt']; ?>"/>
+                        </a>
+                    <?php } ?>
+                </div>
+                <div class="tabs_content">
+                    <?php
+                    $gallery = get_field('3_gallery_3');
+                    foreach ($gallery as $photo) { ?>
+                        <a href="<?= $photo['url']; ?>" data-fancybox="images" data-caption="<?= $photo['caption']; ?>">
+                            <img src="<?= $photo['url']; ?>" alt="<?= $photo['alt']; ?>"/>
+                        </a>
+                    <?php } ?>
+                </div>
+                <div class="tabs_content">
+                    <?php
+                    $gallery = get_field('3_gallery_4');
+                    foreach ($gallery as $photo) { ?>
+                        <a href="<?= $photo['url']; ?>" data-fancybox="images" data-caption="<?= $photo['caption']; ?>">
+                            <img src="<?= $photo['url']; ?>" alt="<?= $photo['alt']; ?>"/>
+                        </a>
+                    <?php } ?>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="foot_block4">
+            <span class="tittle_block4"><?php the_field('4_title'); ?></span>
+            <span class="head_bl4"><?php the_field('4_subtitle'); ?></span>
+            <div class="content_bl4">
+                <a href="<?php the_field('4_left_button_link'); ?>" class="how_to_road"><?php the_field('4_left_button_text'); ?></a>
+                <a href="<?php the_field('4_right_button_link'); ?>" class="to_bron"><?php the_field('4_right_button_text'); ?></a>
+            </div>
+        </div>
     </div>
+</div>
+<script>
+    // fixed header
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 101) {
+            jQuery('.top_halls').addClass("sticky");
+        }
+        else {
+            jQuery('.top_halls').removeClass("sticky");
+        }
+    });
+</script>
+<script src="<?= get_template_directory_uri(); ?>/js/jquery.fancybox.min.js"></script>
 <?php get_footer(); ?>
