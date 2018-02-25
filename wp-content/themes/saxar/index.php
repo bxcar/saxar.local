@@ -34,20 +34,26 @@
         <button class="close_menu"><img src="<?= get_template_directory_uri(); ?>/img/x.png" alt=""/></button>
         <button class="backward-sub"><img src="<?= get_template_directory_uri(); ?>/img/back.png" alt=""/></button>
         <div class="menu">
-            <ul class="list-menu">
-                <li><a href="#">Главная</a></li>
-                <li class="sub-link">
-                    <a href="#">Залы</a>
-                </li>
-                <li><a href="#">Бронирование</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="sub-menu">
-                <li><a href="#">зал 4</a></li>
-                <li><a href="#">зал 3</a></li>
-                <li><a href="#">зал 2</a></li>
-                <li><a href="#">зал 1</a></li>
-            </ul>
+            <?php
+            echo str_replace('menu-item-has-children', 'sub-link', wp_nav_menu( array(
+                'theme_location'  => 'menu-1',
+                'menu'            => '',
+                'container'       => '',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => false,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="list-menu">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => '',
+            )));
+            ?>
         </div>
         <div class="soc">
             <a target="_blank" href="<?php the_field('inst_link', 'option'); ?>" class="insta"></a>
@@ -70,6 +76,12 @@
             </div>
         </div>
     </div>
+    <script>
+        jQuery( ".burger.menu-btn" ).click(function() {
+            var sub_menu = jQuery('.list-menu .sub-menu');
+            jQuery('.wrap_menu .menu').append(sub_menu);
+        });
+    </script>
     <div class="block_content">
         <div>
             <div class="top">

@@ -30,16 +30,26 @@
                     <a href="<?php the_field('footer_link_2', 'option'); ?>" class="phone_foot"><?php the_field('footer_link_2_text', 'option'); ?></a>
                 </div>
             </div>
-            <ul class="foot_nav">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Залы</a></li>
-                <li><a href="#">Зал Сахар</a></li>
-                <li><a href="#">Зал Grey</a></li>
-                <li><a href="#">Зал Лофт</a></li>
-                <li><a href="#">Зал Пион</a></li>
-                <li><a href="#">Бронирование</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+            <?php
+            wp_nav_menu( array(
+                'theme_location'  => 'menu-1',
+                'menu'            => '',
+                'container'       => 'div',
+                'container_class' => '',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul class="foot_nav">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => '',
+            ) );
+            ?>
             <div class="soc">
                 <span class="tittle_soc"><?php the_field('footer_subscribe_text', 'option'); ?></span>
                 <a target="_blank" href="<?php the_field('inst_link', 'option'); ?>" class="insta"></a>
